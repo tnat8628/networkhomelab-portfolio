@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NetworkHomelab — Network, Infrastructure, Security and DevOps portfolio.">
+  <title>NetworkHomelab — Network Engineer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scanline"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home">network<span>@</span>homelab:~$</a>
+    <nav>
+      <a href="#projects">projects</a>
+      <a href="#labs">labs</a>
+      <a href="#skills">skills</a>
+      <a href="#about">about</a>
+      <button id="themeToggle" aria-label="Toggle theme">◐</button>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero section">
+      <div class="prompt">$ whoami</div>
+      <h1>TRUONG NGUYEN ANH THU</h1>
+      <p class="role">Network Engineer <span>·</span> System Administrator <span>·</span> Information Security </p>
+      <p class="intro">I build, monitor and secure network system.</p>
+
+      <div class="terminal-box">
+        <div class="terminal-head">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="terminal-title">focus.txt</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="green">$</span> cat focus.txt</p>
+          <p class="muted">01</p>
+          <p><strong>NETWORKING</strong> — Cisco · Aruba · MikroTik · VLAN · OSPF · BGP · LACP</p>
+          <p class="muted">02</p>
+          <p><strong>SECURITY</strong> — FortiGate · Palo Alto · Firewall · VPN · WAF</p>
+          <p class="muted">03</p>
+          <p><strong>INFRASTRUCTURE</strong> — Linux · Docker · Kubernetes · Proxmox · Nginx</p>
+          <p class="muted">04</p>
+          <p><strong>OBSERVABILITY</strong> — Zabbix · SNMP · Logs · Monitoring</p>
+        </div>
+      </div>
+
+      <div class="links">
+        <a class="button primary" href="https://github.com/tnat8628" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="button" href="https://www.linkedin.com/in/truongthu8628/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="button" href="CV.pdf">Download CV ↓</a>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="prompt">$ ls projects/</div>
+      <div class="section-title">
+        <h2>Selected Projects</h2>
+        <span>04 projects</span>
+      </div>
+
+      <div class="grid projects-grid">
+        <article class="card">
+          <div class="card-number">01</div>
+          <h3>Enterprise Network Infrastructure</h3>
+          <p>Multi-layer enterprise network lab with VLAN, trunking, STP, EtherChannel, OSPF and redundant gateways.</p>
+          <div class="tags"><span>CISCO</span><span>VLAN</span><span>OSPF</span><span>LACP</span></div>
+          <a href="#labs">view project →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-number">02</div>
+          <h3>Network Monitoring Platform</h3>
+          <p>Infrastructure monitoring with Zabbix for switches, firewalls, VPN tunnels, interfaces and system health.</p>
+          <div class="tags"><span>ZABBIX</span><span>SNMP</span><span>FORTIGATE</span></div>
+          <a href="#labs">view project →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-number">03</div>
+          <h3>Secure VPN Infrastructure</h3>
+          <p>Site-to-site and remote connectivity lab using IPSec, WireGuard, routing and firewall policies.</p>
+          <div class="tags"><span>VPN</span><span>IPSEC</span><span>WIREGUARD</span></div>
+          <a href="#labs">view project →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-number">04</div>
+          <h3>Kubernetes HomeLab</h3>
+          <p>Containerized application infrastructure with Docker, Kubernetes, Ingress, DNS and reverse proxy.</p>
+          <div class="tags"><span>DOCKER</span><span>K8S</span><span>NGINX</span></div>
+          <a href="#labs">view project →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="labs" class="section">
+      <div class="prompt">$ tree labs/</div>
+      <div class="section-title">
+        <h2>HomeLab</h2>
+        <span>hands-on / learning</span>
+      </div>
+
+      <div class="lab-list">
+        <a class="lab-row" href="#">
+          <span class="lab-icon">01</span>
+          <span><strong>routing/</strong><small>OSPF · BGP · Static Routing · NAT</small></span>
+          <span class="arrow">→</span>
+        </a>
+        <a class="lab-row" href="#">
+          <span class="lab-icon">02</span>
+          <span><strong>switching/</strong><small>VLAN · STP · Trunk · EtherChannel</small></span>
+          <span class="arrow">→</span>
+        </a>
+        <a class="lab-row" href="#">
+          <span class="lab-icon">03</span>
+          <span><strong>firewall/</strong><small>FortiGate · Palo Alto · Policies · HA</small></span>
+          <span class="arrow">→</span>
+        </a>
+        <a class="lab-row" href="#">
+          <span class="lab-icon">04</span>
+          <span><strong>vpn/</strong><small>IPSec · SSL VPN · WireGuard · Site-to-Site</small></span>
+          <span class="arrow">→</span>
+        </a>
+        <a class="lab-row" href="#">
+          <span class="lab-icon">05</span>
+          <span><strong>monitoring/</strong><small>Zabbix · SNMP · Dashboards · Alerting</small></span>
+          <span class="arrow">→</span>
+        </a>
+        <a class="lab-row" href="#">
+          <span class="lab-icon">06</span>
+          <span><strong>kubernetes/</strong><small>Docker · Minikube · Ingress · Services</small></span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="prompt">$ cat skills.json</div>
+      <div class="section-title">
+        <h2>Technical Stack</h2>
+        <span>current toolkit</span>
+      </div>
+
+      <div class="skills">
+        <div class="skill-group">
+          <h3>NETWORK</h3>
+          <p>Cisco · Aruba · MikroTik · TCP/IP · VLAN · STP · LACP · OSPF · BGP · DNS · DHCP</p>
+        </div>
+        <div class="skill-group">
+          <h3>SECURITY</h3>
+          <p>FortiGate · Palo Alto · Firewall Policy · IPSec · SSL VPN · WAF · NAT</p>
+        </div>
+        <div class="skill-group">
+          <h3>INFRA</h3>
+          <p>Linux · Docker · Kubernetes · Proxmox · Nginx · Git · Cloudflare · Azure</p>
+        </div>
+        <div class="skill-group">
+          <h3>MONITORING</h3>
+          <p>Zabbix · SNMP · Syslog · Interface Metrics · VPN Monitoring · Dashboards</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section status-section">
+      <div class="prompt">$ systemctl status homelab</div>
+      <div class="status-terminal">
+        <div><span class="ok">●</span> network-gateway.service <b>active (running)</b></div>
+        <div><span class="ok">●</span> vpn-tunnels.service <b>active (running)</b></div>
+        <div><span class="ok">●</span> zabbix-monitoring.service <b>active (running)</b></div>
+        <div><span class="ok">●</span> kubernetes.service <b>active (running)</b></div>
+        <div><span class="ok">●</span> dns.service <b>active (running)</b></div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="prompt">$ cat about.txt</div>
+      <h2>Building infrastructure, one lab at a time.</h2>
+      <p>I am a network-focused engineer building practical skills across enterprise networking, security, infrastructure and DevOps. This site is my technical notebook and HomeLab showcase.</p>
+      <div class="contact-line">
+        <span>contact:</span>
+        <a href="mailto:your-email@example.com">your-email@example.com</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">github</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">linkedin</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>networkhomelab.dpdns.org</span>
+    <span>built with HTML + CSS · served by Nginx</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
